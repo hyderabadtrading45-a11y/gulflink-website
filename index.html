@@ -122,14 +122,53 @@ nav {
 .nav-links a:hover {
   text-decoration: underline;
 }
+.top-nav {
+  background: #0a2540;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.nav-logo img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
 </style>
 </head>
 <body> 
-  <nav>
+  <nav class="top-nav">
   <div class="nav-container">
     <div class="nav-logo">
-      <img src="logo.PNG" alt="GulfLink Logo">
-      GulfLink
+      <img src="logo.png" alt="GulfLink Logo">
+      <span>GulfLink</span>
     </div>
 
     <div class="nav-links">
